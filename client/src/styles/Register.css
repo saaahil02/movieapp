@@ -1,0 +1,102 @@
+/* Register.css */
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+  }
+  
+  .form-container form {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.3s ease;
+  }
+  
+  .form-container form:hover {
+    transform: translateY(-5px);
+  }
+  
+  .form-container h1 {
+    text-align: center;
+    color: #2d3748;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+  
+  .form-container .ant-form-item-label label {
+    color: #4a5568 !important;
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+  
+  .form-container .ant-input {
+    border-radius: 8px;
+    padding: 12px 15px;
+    border: 2px solid #e2e8f0;
+    transition: all 0.3s ease;
+  }
+  
+  .form-container .ant-input:hover {
+    border-color: #c3dafe;
+  }
+  
+  .form-container .ant-input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+  }
+  
+  .btn-primary {
+    width: 100%;
+    padding: 14px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .btn-primary:hover {
+    background: #764ba2;
+    transform: translateY(-2px);
+  }
+  
+  .form-container a {
+    display: block;
+    text-align: center;
+    color: #667eea;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .form-container a:hover {
+    color: #764ba2;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .form-container form {
+      padding: 30px 20px;
+      margin: 15px;
+    }
+    
+    .form-container h1 {
+      font-size: 1.8rem;
+    }
+  }
